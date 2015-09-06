@@ -1,6 +1,6 @@
 # Break-Project
-Artist website redesign (original site: http://garcia-art.com/index.html)
-Trello board (https://trello.com/b/1bL4jpEu/break-project)
++ Artist website redesign (original site: http://garcia-art.com/index.html)  
++ Trello board (https://trello.com/b/1bL4jpEu/break-project)
 
 + What is the goal of the project?
 
