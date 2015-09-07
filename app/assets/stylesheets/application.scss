@@ -16,3 +16,22 @@
 
   @import "bootstrap-sprockets";
   @import "bootstrap";
+
+  html {
+    background-color: black;
+  }
+
+  header {
+    background-color: beige;
+    padding-top: 1em;
+    padding-left: 1em;
+  }
+
+  a {
+    color: black;
+    font-size: 18px;
+  }
+
+  footer {
+    font-style: italic;
+  }
