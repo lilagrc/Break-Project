@@ -9,6 +9,7 @@ Rails.application.routes.draw do
    get '/ana' => 'ana#index', as: 'ana_gallery'
    get '/commissions' => 'main#commissions',  as: 'commissions'
    get '/contact' => 'main#contact', as: 'contact'
+   get '/about' => 'main#about', as: 'about'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
