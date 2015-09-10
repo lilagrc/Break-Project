@@ -1,0 +1,9 @@
+<h2>Roberto's Bronze Sculpture Work</h2>
+
+<div class="row">
+  <% @roberto_bronze.each do |bronze| %>
+    <div class="col-xs-6 col-md-3">
+      <%= image_tag(bronze.image, size: '200x230', class: "thumbnail") %>
+    </div>
+  <% end %>
+</div>

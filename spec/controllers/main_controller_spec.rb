@@ -16,4 +16,12 @@ RSpec.describe MainController, type: :controller do
       expect(response).to render_template('commissions')
     end
   end
+
+  describe "about" do
+    it 'displays about page' do
+      get :about
+
+      expect(response).to render_template('about')
+    end
+  end
 end
