@@ -1,7 +1,6 @@
-<!-- Rotating photos of featured work -->
+ <header><%= render 'shared/header' %></header><!-- Rotating photos of featured work -->
 
 <div class='container-fluid'>
-  <h2>View Artist Galleries</h2>
     <div class="col-md-2">
       <h3>Roberto Garcia Jr.</h3>
       <br>
@@ -17,6 +16,7 @@
 
 <div class="col-md-8" >
   <div class="main-panel">
+    <h2>View Artist Galleries</h2>
    <div class="single-item">
     <div><%= image_tag('luna.jpg', class: "image") %></div>
     <div><%= image_tag('big_boy.jpg', class: "image") %></div>
@@ -30,12 +30,15 @@
       <br>
       <br>
       <ul class="list-group">
-       <li><%= link_to "Bronze Scupltures", ana_bronze_path, method: :get %></li>
+       <li><%= button_to "Bronze Scupltures", ana_bronze_path, method: :get,  class: "ana_bronze" %></li>
        <li>Portraits</li>
        <li>Digital Paintings</li>
     </ul>
   </div>
 </div>
+
+<footer><%= render 'shared/footer' %></footer>
+
 
 
 

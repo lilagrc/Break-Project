@@ -17,4 +17,37 @@
 //= require_tree .
 
 
+$(function() {
+  $(".ana_bronze").click(function(event) {
+     event.preventDefault();
 
+     var button = $(this);
+     var formTag = button.parent('form');
+     var url = formTag.attr('action');
+     var method = formTag.attr('method');
+
+     var parent = button.parents('.container-fluid');
+     var middle_column = parent.children('.col-md-8');
+     var main_panel = middle_column.children('.main-panel');
+
+     console.log(button);
+    console.log(parent);
+    console.log(middle_column);
+    console.log(main_panel);
+    console.log(url);
+    console.log(method);
+
+    $.ajax(url, {
+      type: method,
+      success: function (data) {
+        console.log(data);
+        console.log(main_panel);
+        $(main_panel).empty().fadeOut();
+        $(main_panel).append(data).fadeIn();
+      }
+    });
+
+
+
+ });
+});
