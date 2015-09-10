@@ -1,47 +1,42 @@
 <!-- Rotating photos of featured work -->
- <div class="single-item">
-  <div class="image"><%= image_tag('Pelican.jpg', size: '300x300') %></div>
-  <div class="image"><%= image_tag('Big Boy B.jpg', size: '300x300' ) %></div>
-  <div class="image"><%= image_tag("Don't Shoot Me.jpg", size: '300x300') %></div>
-</div>
-
-<br>
-<br>
-<br>
-<h2>View Artist Galleries</h2>
-<br>
 
 <div class='container-fluid'>
+  <h2>View Artist Galleries</h2>
+    <div class="col-md-2">
+      <h3>Roberto Garcia Jr.</h3>
 
-  <div class="col-md-6">
-
-    <h3>Roberto Garcia Jr.</h3>
-
-    <%= button_to "Roberto's Gallery", roberto_gallery_path, method: :get, class: "btn btn-default" %>
-    <br>
-    <br>
-    <div class="list-group">
-      <button type="button" class="list-group-item">Bronze Sculptures</button>
-      <button type="button" class="list-group-item">Monuments</button>
-      <button type="button" class="list-group-item">Paintings</button>
-      <button type="button" class="list-group-item">Bronze Bas-Reliefs)</button>
-    </div>
-
+      <%= button_to "Roberto's Gallery", roberto_gallery_path, method: :get, class: "btn btn-default" %>
+      <br>
+      <br>
+      <ul class="list-group">
+         <li >Bronze Sculptures</li>
+         <li >Monuments</li>
+         <li >Paintings</li>
+         <li >Bronze Bas-Reliefs)</li>
+      </ul>
   </div>
 
-  <div class="col-md-6">
 
-    <h3>Baby G. (Ana Garcia)</h3>
-
-    <%= button_to "Ana's Gallery", ana_gallery_path, method: :get, class: "btn btn-default" %>
-    <br>
-    <br>
-    <div class="list-group">
-      <button type="button" class="list-group-item">Bronze Scupltures</button>
-      <button type="button" class="list-group-item">Portraits</button>
-      <button type="button" class="list-group-item">Digital Paintings</button>
-    </div>
-
+<div class="col-md-8">
+   <div class="single-item">
+    <div class="image"><%= image_tag('Pelican.jpg', size: '300x300') %></div>
+    <div class="image"><%= image_tag('Big Boy B.jpg', size: '300x300' ) %></div>
+    <div class="image"><%= image_tag("Don't Shoot Me.jpg", size: '300x300') %></div>
   </div>
 </div>
+
+  <div class="col-md-2">
+    <h3>Baby G. (Ana Garcia)</h3>
+      <%= button_to "Ana's Gallery", ana_gallery_path, method: :get, class: "btn btn-default" %>
+      <br>
+      <br>
+      <ul class="list-group">
+       <li >Bronze Scupltures</li>
+       <li >Portraits</li>
+       <li >Digital Paintings</li>
+    </ul>
+  </div>
+</div>
+
+
 
