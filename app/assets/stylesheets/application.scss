@@ -15,25 +15,64 @@
  *= require_self
  */
 
-  @import 'slick';
   @import "bootstrap-sprockets";
   @import "bootstrap";
 
+  @import 'slick';
+  @import 'slick-theme';
+
   html {
-    background-color: black;
+    background-color: #CDFFFF;
+  }
+
+  .container-fluid {
+    background-color: rgb(145,179,185);
   }
 
   header {
-    background-color: beige;
+    background-color: rgb(50,37,7);
     padding-top: 1em;
     padding-left: 1em;
+    padding-bottom: 2em;
   }
 
   a {
-    color: black;
+    color: white;
     font-size: 18px;
   }
 
   footer {
     font-style: italic;
+    text-align: center;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: 'Courgette', cursive;
+  }
+
+  .single-item {
+    width: 50em;
+    margin-left: 20em;
+    margin-top: 1em;
+  }
+
+  .artist {
+    float: right;
+    padding-right: 2em;
+  }
+
+  h1 {
+    font-family: 'Courgette', cursive;
+    color: white;
+  }
+
+  .image {
+    margin-left: 4em;
+  }
+
+  h3  {
+    font-family: 'Courgette', cursive;
+    text-align: center;
   }

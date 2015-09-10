@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BreakProject</title>
+  <title>Artwork of Roberto and Ana</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
   <header><%= render 'shared/header' %></header>
-  <div class='container-fluid'>
 
-<%= yield %>
-  <footer><%= render 'shared/footer' %></footer>
+
+
+  <div class='container-fluid'>
+    <%= yield %>
+
   </div>
+
+<br>
+<br>
+
+<footer><%= render 'shared/footer' %></footer>
 </body>
+
 </html>
