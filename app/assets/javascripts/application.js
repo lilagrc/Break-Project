@@ -54,10 +54,16 @@ $(function() {
     // $('#foo').fadeIn("slow");
 // });
 
-        $(main_panel).slideUp(400, 'swing', function() {
-          $(this).html(data).slideDown(400);
+    //     $(main_panel).slideUp(400, 'swing', function() {
+    //       $(this).html(data).slideDown(400);
+    //     });
+    // }
+
+    $(main_panel).animate({'margin-right':'1000px'}, 300, function() {
+          $(this).html(data).animate({'margin-right':'0px'}, 600);
         });
-    }
+      }
+
   });
   });
 });

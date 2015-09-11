@@ -13,29 +13,29 @@
       </ul>
   </div>
 
-
-<div class="col-md-8" >
-  <div class="main-panel">
+  <div class="col-md-8" >
+    <div class="main-panel">
     <h2>View Artist Galleries</h2>
-   <div class="single-item">
-    <div><%= image_tag('luna.jpg', class: "image") %></div>
-    <div><%= image_tag('big_boy.jpg', class: "image") %></div>
-    <div><%= image_tag("walker.jpg", class: "image") %></div>
+     <div class="single-item">
+      <div><%= image_tag('luna.jpg', class: "image") %></div>
+      <div><%= image_tag('big_boy.jpg', class: "image") %></div>
+      <div><%= image_tag("walker.jpg", class: "image") %></div>
+    </div>
+    </div>
   </div>
-  </div>
-</div>
 
   <div class="col-md-2">
     <h3>Baby G. (Ana Garcia)</h3>
       <br>
       <br>
-      <ul class="list-group">
-       <li><%= button_to "Bronze Scupltures", ana_bronze_path, method: :get,  class: "ana_bronze" %></li>
-       <li>Portraits</li>
-       <li>Digital Paintings</li>
-    </ul>
-  </div>
+        <ul class="list-group">
+         <li><%= button_to "Bronze Scupltures", ana_bronze_path, method: :get,  class: "ana_bronze" %></li>
+         <li>Portraits</li>
+         <li>Digital Paintings</li>
+      </ul>
+    </div>
 </div>
+
 
 <footer><%= render 'shared/footer' %></footer>
 
