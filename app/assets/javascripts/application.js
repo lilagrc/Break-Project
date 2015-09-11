@@ -18,55 +18,57 @@
 
 
 $(function() {
+  $(".roberto_bronze").click(function(event) {
+     event.preventDefault();
+     var button = $(this);
+
+     slide_artwork(button, 'roberto');
+    });
+  });
+
+  $(function() {
   $(".ana_bronze").click(function(event) {
      event.preventDefault();
-
      var button = $(this);
-     var formTag = button.parent('form');
-     var url = formTag.attr('action');
-     var method = formTag.attr('method');
 
-     var parent = button.parents('.container-fluid');
-     var middle_column = parent.children('.col-md-8');
-     var main_panel = middle_column.children('.main-panel');
+      slide_artwork(button, 'ana');
+    });
+});
 
-    $.ajax(url, {
-      type: method,
-      success: function (data) {
-        // console.log(data);
-        // console.log(main_panel);
-         //$(main_panel).fadeTo(3000).replaceWith(data);
-         // $(main_panel).slideDown(3000).append();
+function slide_artwork(button, artist) {
 
-      // $(main_panel).fadeOut(, function(){
-      //   $(this).replaceWith(data);
-      //   $(main_panel).fadeIn("slow");
-      // })
+   var formTag = button.parent('form');
+   var url = formTag.attr('action');
+   var method = formTag.attr('method');
 
-    //    $(main_panel).fadeOut("slow", function(){
-    //       $(main_panel).html(data);
-    //       $(main_panel).fadeIn("slow");
-    //   };
+   var parent = button.parents('.container-fluid');
+   var middle_column = parent.children('.col-md-8');
+   var main_panel = middle_column.children('.main-panel');
 
-    //   $('#foo').fadeOut("slow", function(){
-    // var div = $("<div id='foo'>test2</div>").hide();
-    // $(this).replaceWith(div);
-    // $('#foo').fadeIn("slow");
-// });
+  $.ajax(url, {
+    type: method,
+    success: function (data) {
 
-    //     $(main_panel).slideUp(400, 'swing', function() {
-    //       $(this).html(data).slideDown(400);
-    //     });
-    // }
+    $(button).addClass("chosen");
 
-    $(main_panel).animate({'margin-right':'1000px'}, 300, function() {
-          $(this).html(data).animate({'margin-right':'0px'}, 600);
+
+    if (artist == 'ana') {
+      $(main_panel).animate({'margin-left':'1500px'}, 300, function() {
+        $(this).html(data).delay(100).animate({'margin-left':'0px'}, 300);
+        });
+    } else if (artist == 'roberto') {
+      $(main_panel).animate({'margin-right':'2000px'}, 300, function() {
+        $(this).html(data).delay(100).animate({'margin-right':'0px'}, 300);
         });
       }
+    }
+  });
+}
 
-  });
-  });
-});
+
+
+
+
 
 
 

@@ -6,11 +6,8 @@ $(document).ready(function(){
   $('.single-item').slick({
   centerMode: true,
   dots: true
+  });
 });
-
-});
-
-
 
 
 
