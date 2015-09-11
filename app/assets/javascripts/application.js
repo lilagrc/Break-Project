@@ -30,24 +30,37 @@ $(function() {
      var middle_column = parent.children('.col-md-8');
      var main_panel = middle_column.children('.main-panel');
 
-     console.log(button);
-    console.log(parent);
-    console.log(middle_column);
-    console.log(main_panel);
-    console.log(url);
-    console.log(method);
-
     $.ajax(url, {
       type: method,
       success: function (data) {
-        console.log(data);
-        console.log(main_panel);
-        $(main_panel).empty().fadeOut();
-        $(main_panel).append(data).fadeIn();
-      }
-    });
+        // console.log(data);
+        // console.log(main_panel);
+         //$(main_panel).fadeTo(3000).replaceWith(data);
+         // $(main_panel).slideDown(3000).append();
 
+      // $(main_panel).fadeOut(, function(){
+      //   $(this).replaceWith(data);
+      //   $(main_panel).fadeIn("slow");
+      // })
 
+    //    $(main_panel).fadeOut("slow", function(){
+    //       $(main_panel).html(data);
+    //       $(main_panel).fadeIn("slow");
+    //   };
 
- });
+    //   $('#foo').fadeOut("slow", function(){
+    // var div = $("<div id='foo'>test2</div>").hide();
+    // $(this).replaceWith(div);
+    // $('#foo').fadeIn("slow");
+// });
+
+        $(main_panel).slideUp(400, 'swing', function() {
+          $(this).html(data).slideDown(400);
+        });
+    }
+  });
+  });
 });
+
+
+
