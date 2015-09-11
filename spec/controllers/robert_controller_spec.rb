@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe RobertController, type: :controller do
   describe 'bronze' do
     it "displays Robert's bronzse gallery page" do
-       get :index
+       get :bronze
 
-       expect(response).to render_template("index")
+       expect(response).to be_success
     end
   end
 end

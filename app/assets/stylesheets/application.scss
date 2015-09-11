@@ -40,6 +40,7 @@
   a {
     color: white;
     font-size: 18px;
+    padding-right: 2em;
   }
 
   footer {
@@ -76,11 +77,17 @@
   .image {
     margin-right: 80px;
     margin-left: 80px;
+    padding: 4px;
+    background-color: rgb(50,37,7);
   }
 
-  h3  {
+  h2  {
     font-family: 'Dosis', sans-serif;
     text-align: center;
+  }
+
+  small {
+    font-family: 'Dosis', sans-serif;
   }
 
   .col-md-2 {
@@ -91,14 +98,26 @@
     margin-top: 2em;
   }
 
-  .thumbnails:hover img {
-    width:400px;
-    height:500px;
+  .thumbnail {
+    background-color: rgb(50,37,7);
 }
 
 .chosen {
-  background-color: gray;
+  background-color: #570a0a;
+  color: white;
 }
+
+.artist_name {
+  border-bottom: solid black;
+  margin-bottom: 2em;
+}
+
+.social_media {
+  float: right;
+  margin-right: 1em;
+}
+
+
 
 
 

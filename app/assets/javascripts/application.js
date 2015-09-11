@@ -57,14 +57,22 @@ function slide_artwork(button, artist) {
         $(this).html(data).delay(100).animate({'margin-left':'0px'}, 300);
         });
     } else if (artist == 'roberto') {
-      $(main_panel).animate({'margin-right':'2000px'}, 300, function() {
-        $(this).html(data).delay(100).animate({'margin-right':'0px'}, 300);
+      $(main_panel).animate({'margin-left':'-1500px'}, 300, function() {
+        $(this).html(data).delay(100).animate({'margin-left':'0px'}, 250);
         });
       }
     }
   });
 }
 
+$(function() {
+  $(".about").click(function(event) {
+    event.preventDefault();
+
+    var link = $(this);
+    console.log(link);
+  });
+})
 
 
 
