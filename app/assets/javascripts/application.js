@@ -66,11 +66,12 @@ function slide_artwork(button, artist) {
 }
 
 $(function() {
-  $(".about").click(function(event) {
-    event.preventDefault();
+  $("a#about").click(function(event) {
+    event.preventDefault(this);
 
     var link = $(this);
-    console.log(link);
+    var url = link.attr('href')
+    console.log(this);
   });
 })
 
