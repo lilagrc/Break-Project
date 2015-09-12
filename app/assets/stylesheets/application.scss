@@ -49,7 +49,7 @@
     color: white;
     text-align: center;
     margin: auto;
-    margin-top: 400px;
+    margin-top: 300px;
     padding-bottom: 1em;
     padding-top: 1em;
     background-color: rgb(50,37,7);
@@ -131,6 +131,10 @@
 ul li {
   list-style-type: none;
   margin-left: 10px;
+}
+
+.large_pic {
+  display: none;
 }
 
 
