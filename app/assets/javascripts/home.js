@@ -5,7 +5,9 @@
 $(document).ready(function(){
   $('.single-item').slick({
   centerMode: true,
-  dots: true
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 2000
   });
 });
 
