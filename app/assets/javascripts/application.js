@@ -71,7 +71,23 @@ $(function() {
 
     var link = $(this);
     var url = link.attr('href')
-    console.log(this);
+    var grandparent = link.parents('.container-fluid');
+    var parent = grandparent.children('.container-fluid');
+    var middle_column = parent.children('.col-md-8');
+    var main_panel = middle_column.children('.main-panel');
+    console.log(main_panel);
+
+    $.ajax(url, {
+    success: function (data) {
+
+
+
+      $(main_panel).slideUp(600, function() {
+        $(this).html(data).slideDown(600);
+        });
+    }
+  })
+
   });
 })
 
