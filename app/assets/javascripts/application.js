@@ -14,7 +14,20 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require jquery.slick
+//= require magnific-popup
 //= require_tree .
+
+$(document).ready(function() {
+  $('.popup').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
+    }
+
+    });
+  });
 
 
 $(function() {

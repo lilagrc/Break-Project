@@ -82,10 +82,9 @@ GEM
     jquery-slick-rails (1.5.8)
       railties (>= 3.1)
     json (1.8.3)
-    lightbox2-rails (2.7.1)
-      railties (>= 3.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
+    magnific-popup-rails (0.9.9.1)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
@@ -200,7 +199,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   jquery-slick-rails
-  lightbox2-rails
+  magnific-popup-rails
   pry-rails
   rails (= 4.2.4)
   rspec-rails

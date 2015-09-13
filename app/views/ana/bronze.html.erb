@@ -2,7 +2,7 @@
   <div class="row">
     <% @ana_bronze.each do |bronze| %>
      <div class="col-xs-6 col-md-3">
-       <%= image_tag(bronze.image, size: '400x250', class: "thumbnail") %>
+       <%= link_to image_tag(bronze.image, size: '400x250', class: "thumbnail"), image_path(bronze.image), class: "popup" %>
       </div>
     <% end %>
   </div>
